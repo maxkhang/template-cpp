@@ -268,8 +268,9 @@ void saveToPGM(const PGM<U>& pgm, const char* file)
 		{
 			for (unsigned int j = 0; j < pgm.numcols; j++)
 			{
-				dataFile << pgm.board[i][j] << endl;
+				dataFile << pgm.board[i][j] << " ";
 			}
+			dataFile << endl;
 		}
 	}
 	dataFile.close();
